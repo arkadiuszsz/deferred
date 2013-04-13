@@ -19,7 +19,7 @@ The implemetation is templated no compilation needed just include HPP files to u
       p = d.promise();
       r = d.resolver();
 
-      p.then([] (int a) {
+      p.done([] (int a) {
           std::cout << "A = " << a << std::endl;
         });
       p.fail([] (const std::string& a) {
