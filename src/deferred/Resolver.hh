@@ -60,7 +60,7 @@ namespace Df
   template <typename T>
   void Resolver<T>::clear()
   {
-    _data.cear();
+    _data.clear();
   }
 
   template <typename T>
