@@ -51,7 +51,7 @@ namespace Df
   }
 
   template <typename T>
-  void DeferredData<T>::then(std::function<void (const T&)> f)
+  void DeferredData<T>::done(std::function<void (const T&)> f)
   {
     std::lock_guard<std::mutex> l(_lock);
 

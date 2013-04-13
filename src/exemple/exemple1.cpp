@@ -31,7 +31,7 @@ int main(int, char** )
   p = d.promise();
   r = d.resolver();
 
-  p.then([] (int a) {
+  p.done([] (int a) {
       std::cout << "A = " << a << std::endl;
     });
   r.resolve(42);

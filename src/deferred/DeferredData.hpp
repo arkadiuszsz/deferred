@@ -48,7 +48,7 @@ namespace Df
 
     void resolve(const T&);
     void reject(const std::string&);
-    void then(std::function<void (const T&)>);
+    void done(std::function<void (const T&)>);
     void fail(std::function<void (const std::string&)>);
 
     enum State

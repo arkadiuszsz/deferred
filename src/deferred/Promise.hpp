@@ -40,7 +40,7 @@ namespace Df
     Promise(const Promise&);
     Promise& operator=(const Promise&);
 
-    void then(std::function<void (const T&)>);
+    void done(std::function<void (const T&)>);
     void fail(std::function<void (const std::string&)>);
 
     void clear();

@@ -46,9 +46,9 @@ namespace Df
   }
 
   template <typename T>
-  void Promise<T>::then(std::function<void (const T&)> f)
+  void Promise<T>::done(std::function<void (const T&)> f)
   {
-    _data->then(f);
+    _data->done(f);
   }
 
   template <typename T>
