@@ -60,7 +60,7 @@ namespace Df
   template <typename T>
   void Promise<T>::clear()
   {
-    _data.clear();
+    _data.reset();
   }
 
   template <typename T>
