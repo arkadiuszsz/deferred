@@ -43,6 +43,8 @@ namespace Df
     void then(std::function<void (const T&)>);
     void fail(std::function<void (const std::string&)>);
 
+    void clear();
+
   private:
     Promise(std::shared_ptr<DeferredData<T> >);
 

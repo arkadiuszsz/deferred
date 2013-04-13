@@ -57,6 +57,11 @@ namespace Df
     _data->reject(error);
   }
 
+  template <typename T>
+  void Resolver<T>::clear()
+  {
+    _data.cear();
+  }
 
   template <typename T>
   Resolver<T>::Resolver(std::shared_ptr<DeferredData<T> > data) :

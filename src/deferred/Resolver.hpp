@@ -39,6 +39,8 @@ namespace Df
     void resolve(const T&);
     void reject(const std::string&);
 
+    void clear();
+
   private:
     Resolver(std::shared_ptr<DeferredData<T> >);
 

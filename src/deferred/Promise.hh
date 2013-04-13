@@ -58,7 +58,13 @@ namespace Df
   }
 
   template <typename T>
-  Promise<T>::Promise(std::shared_ptr<DeferredData<T> > data) : 
+  void Promise<T>::clear()
+  {
+    _data.cear();
+  }
+
+  template <typename T>
+  Promise<T>::Promise(std::shared_ptr<DeferredData<T> > data) :
     _data(data)
   {
   }
