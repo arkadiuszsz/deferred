@@ -7,5 +7,6 @@ set(EXEMPLE2_SRC ${EXEMPLE_DIR}/exemple2.cpp)
 
 include_directories(src/deferred)
 add_definitions(-std=c++0x)
+add_definitions(-W -Wall)
 add_executable(exemple1 ${EXEMPLE1_SRC})
 add_executable(exemple2 ${EXEMPLE2_SRC})

@@ -22,7 +22,7 @@
 
 using namespace Df;
 
-int main(int argc, char** argv)
+int main(int, char** )
 {
   Deferred<int> d;
   Promise<int> p;

@@ -42,6 +42,7 @@ namespace Df
   Promise<T>& Promise<T>::operator=(const Promise& obj)
   {
     _data = obj._data;
+    return (*this);
   }
 
   template <typename T>

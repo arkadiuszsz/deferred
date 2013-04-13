@@ -42,6 +42,7 @@ namespace Df
   Resolver<T>& Resolver<T>::operator=(const Resolver& obj)
   {
     _data = obj._data;
+    return (*this);
   }
 
   template <typename T>
